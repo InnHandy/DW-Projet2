@@ -1,38 +1,144 @@
-body{
-    font-family: "Raleway", sans-serif;
-    margin 0;
-}
+.menu{
 
-/*Header*/
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+    color: #DEEBFF;
+    font-weight: bold;
+    }
+    
+    .griser{
+    color: gray;
+    }
+    
+    
+    body{
+        font-family: "Raleway", sans-serif;
+        margin :0;
+    }
+    
+    /*Header*/
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        line-height: 100px;
+    }
+    
+    nav img{
+        height: 40px;
+        padding-left: 10px;
+    }
+    nav ul {
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+    }
+    nav li{
+        margin: 0 20px 0 20px;
+    }
+    /*survol de la souris*/
+    nav li:hover {
+        border-top: 1px solid;
+        color: #0065FC;
+    }
+    
+    /*Main*/
+    h1{
+        font-size: 15px;
+    }
+    h2{
+        font-size: 10px;
+    }
+    
+    main{
+        padding-left: 10px;
+    }
+    
+    .recherche{
+        
+        border-radius: 10px;
+        background-color: #0065FC;
+    }
+    
+    .bouton{
+        border-radius: 10px;
+        background-color: #1fe0;
+        border-color: dodgerblue;
+    }
+    
+    .info{
+        display: flex;
+        align-items: center;
+    }
+    .line {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    .line div {
+        margin-right: 20px;
+    }
+    
+    .vignette {
+        text-align: center;
+        width: 150px;
+    }
+    
+    .colonne1>div{
+        background-color: dimgray;
+    }
+    .hebergement {
+        width: 45%;
+    }
+    
+    .colonnes>div{
+        display: flex;
+    }
+    
+    img {
+        height: 50px;
+        width: 100px;
+    }
 
-nav img{
-    height: 40px;
-}
-nav ul {
-    display: flex;
-    list-style: none;
-    justify-content: space-between;
-}
-nav li{
-    margin: 0 10px 0 10px;
-}
-/*Main*/
-h1{
-    font-size: 15px;
-}
-h2{
-    font-size: 10px;
-}
+    /*footer*/
+    footer{
+        background-color: #F2F2F2;
+        DISPLAY: FLEX;
+        align-content: flex-start;
+    }
 
-.footer>div {
-    background-color: dimgray;
-}
-.footer {
-    display : grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
+    footer ul {
+        list-style: none;
+    }
+
+    .ssfooter{
+        font-weight: bold;
+        margin-bottom: 30px;
+        
+    }
+
+    .element3{
+        width: : 200px;
+        padding-left: 200px;
+    }
+
+    .element2{
+        padding-left: 200px;
+    }
+
+    .ActivitesMarseille{
+        display: flex;
+    }
+
+    .figact1{
+        background-color:white;
+        border-radius: 5px;
+        box-shadow: 6px 6px 10px black;
+    }
+
+    .fig1{
+        border:2px solid white;
+        -moz-border-radius:7px;
+        -webkit-border-radius:7px;
+        border-radius:30px;
+    }
