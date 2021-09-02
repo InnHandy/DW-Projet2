@@ -54,45 +54,48 @@
     
     .recherche{
         
-        border-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
         background-color: #0065FC;
+        color: white;
     }
     
+    .fa{
+    color: blue;
+    border: 1px solid azure;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    background-color: azure;
+    vertical-align: middle; 
+    text-align: center;
+    text-decoration: none;
+    z-index: 1;
+    }
     .bouton{
         border-radius: 10px;
-        background-color: #1fe0;
-        border-color: dodgerblue;
+        background-color: transparent;
+        border-color: #F2F2F2;
+        position: relative;
+        right: 10px;
+        z-index: 0;
     }
     
     .info{
         display: flex;
         align-items: center;
     }
-    .line {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        flex-wrap: wrap;
-    }
+    
     
     .line div {
         margin-right: 20px;
     }
     
-    .vignette {
-        text-align: center;
-        width: 150px;
-    }
     
-    .colonne1>div{
-        background-color: dimgray;
-    }
-    .hebergement {
-        width: 45%;
-    }
     
-    .colonnes>div{
+    .line{
         display: flex;
+        align-items: center;
     }
     
     img {
@@ -128,17 +131,73 @@
 
     .ActivitesMarseille{
         display: flex;
+        height: 300px;
     }
 
     .figact1{
         background-color:white;
         border-radius: 5px;
         box-shadow: 6px 6px 10px black;
+        text-align: center;
+        width: 150px;
     }
 
     .fig1{
         border:2px solid white;
         -moz-border-radius:7px;
         -webkit-border-radius:7px;
-        border-radius:30px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .bloc1{
+        display: flex;
+    }
+
+    .ssbloc1{
+        
+        background-color: #F2F2F2;
+        border-radius: 10px;
+        padding-left: 10px;
+    }
+
+    .sssbloc1{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .ssbloc2{
+        
+        background-color: #F2F2F2;
+        border-radius: 10px;
+        padding-left: 10px;
+    }
+
+    .ssbloc{
+        background-color: white;
+        width: 30px;
+    }
+
+    .sssbloc2{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+
+    }
+
+    i{
+        text-align: center;
+    }
+
+    .partiel1{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .partiel2{
+        display: flex;
+        flex-direction: column;
     }
