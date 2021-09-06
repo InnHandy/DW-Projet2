@@ -1,3 +1,9 @@
+body{
+    font-family: "Raleway", sans-serif;
+    margin :5px;
+    padding: 5px;
+}
+
 .menu{
 
     color: #DEEBFF;
@@ -9,10 +15,7 @@
     }
     
     
-    body{
-        font-family: "Raleway", sans-serif;
-        margin :0;
-    }
+    
     
     /*Header*/
     nav{
@@ -40,169 +43,22 @@
         color: #0065FC;
     }
     
-    /*Main*/
-    h1{
-        font-size: 15px;
+    /*body*/
+    .fa-map-marker{
+                   border: 1px solid black;
+                   color: black;
+                   
     }
-    h2{
-        font-size: 10px;
-    }
-    
-    main{
-        padding-left: 10px;
-    }
-    
-    .recherche{
-        
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
-        background-color: #0065FC;
-        color: white;
-    }
-    
-    .fa{
-    color: blue;
-    border: 1px solid azure;
-    border-radius: 50%;
-    height: 20px;
-    width: 20px;
-    background-color: azure;
-    vertical-align: middle; 
-    text-align: center;
-    text-decoration: none;
-    z-index: 1;
-    }
-    .bouton{
-        border-radius: 10px;
-        background-color: transparent;
-        border-color: #F2F2F2;
-        position: relative;
-        right: 10px;
-        z-index: 0;
-    }
-    
-    .info{
-        display: flex;
-        align-items: center;
-    }
-    
-    
-    .line div {
-        margin-right: 20px;
-    }
-    
-    
-    
-    .line{
-        display: flex;
-        align-items: center;
-    }
-    
-    img {
+    .centrer{
+        border: 1px solid black;
+        background-color: #f2f2f2;
         
     }
 
-
-
-    /*footer*/
-    footer{
-        background-color: #F2F2F2;
-        DISPLAY: FLEX;
-        align-content: flex-start;
+    .chercher a {
+        border: 1px solid black;
     }
-
-    footer ul {
-        list-style: none;
+    .chercher{
+       display: flex; 
+       align-content: center;
     }
-
-    .ssfooter{
-        font-weight: bold;
-        margin-bottom: 30px;
-        
-    }
-
-    .element3{
-        width: : 200px;
-        padding-left: 200px;
-    }
-
-    .element2{
-        padding-left: 200px;
-    }
-
-    .ActivitesMarseille{
-        display: flex;
-        height: 500px;
-    }
-
-    .figact1{
-        background-color:white;
-        border-radius: 5px;
-        box-shadow: 6px 6px 10px black;
-        text-align: center;
-        width: 150px;
-    }
-
-    .fig1{
-        height: 60%;
-        width: 90%;
-        border:2px solid white;
-        -moz-border-radius:7px;
-        -webkit-border-radius:7px;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-    }
-
-    .bloc1{
-        display: flex;
-    }
-
-    .ssbloc1{
-        
-        background-color: #F2F2F2;
-        border-radius: 10px;
-        padding-left: 10px;
-    }
-
-    .sssbloc1{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        align-items: center;
-    }
-
-    .ssbloc2{
-        
-        background-color: #F2F2F2;
-        border-radius: 10px;
-        padding-left: 10px;
-    }
-
-    .ssbloc{
-        background-color: white;
-        width: 30px;
-    }
-
-    .sssbloc2{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        align-items: center;
-
-    }
-
-    i{
-        text-align: center;
-    }
-
-    .partiel1{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .partiel2{
-        display: flex;
-        flex-direction: column;
-    }
-
-    
