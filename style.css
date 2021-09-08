@@ -1,23 +1,28 @@
+
+/*Propriétés générales*/
+
 body{
     font-family: "Raleway", sans-serif;
     margin :5px;
     padding: 5px;
 }
 
+        /*taille des titres h1 est de 20px*/
+h1{
+    font-size: 20px;
+    }
+
+/*Header*/
 .menu{
 
     color: #DEEBFF;
     font-weight: bold;
     }
     
-    .griser{
+.griser{
     color: gray;
     }
-    
-    
-    
-    
-    /*Header*/
+     
     nav{
         display: flex;
         justify-content: space-between;
@@ -43,22 +48,285 @@ body{
         color: #0065FC;
     }
     
-    /*body*/
+/*section 1*/
     .fa-map-marker{
-                   border: 1px solid black;
-                   color: black;
+        
+        color: black;
+        vertical-align: middle;
                    
     }
     .centrer{
-        border: 1px solid black;
-        background-color: #f2f2f2;
+    
+    background-color: gray;
+    width: 30px;
+    text-align: center;
+    border: 2px solid gray;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
         
     }
 
-    .chercher a {
-        border: 1px solid black;
-    }
+    
     .chercher{
        display: flex; 
        align-content: center;
     }
+
+    .recherche1{
+        height: 22px;
+    font-size: 15px;
+    border-bottom: 1px solid #F2F2F2;
+    border-top: 1px solid #F2F2F2;
+    border-left: 0px;
+    border-right: 0px;
+    }
+
+    .recherche2{
+        height: 26px;
+        font-size: 15px;
+        background-color: #0065FC;
+        color: white;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+        border-color: #0065FC;
+        border-bottom-color: #0065FC;
+        border-width: 0px;
+    }
+
+    .line{
+        display: flex;
+        align-items: center;
+    }
+
+    .dep{
+        padding-left: 13px;
+    }
+
+    .lienspe{
+        display: block;
+    width: 100px;
+    height: 20px
+    }
+    
+    .line div {
+        margin-right: 20px;
+    }
+
+    .fa-money{
+        color:#0065FC;
+        vertical-align: middle;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .fa-heart{
+        color:#0065FC;
+        vertical-align: middle;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .fa-child{
+        color:#0065FC;
+        vertical-align: middle;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .fa-paw{
+        color:#0065FC;
+        vertical-align: middle;
+        text-align: center;
+        font-size: 15px;
+    }
+
+
+    .filtre a{
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        border: 1px solid gray;
+        border-bottom-left-radius: 15px;
+        border-top-left-radius: 15px;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+        padding: 5px;
+    }
+
+
+    .circle{
+        border: 1px solid #87CEEB;
+    border-radius: 50%;
+    background-color: #87CEEB;
+    /* width: 52px; */
+    padding: 5px;
+    margin-left: -8px;
+    }
+
+    .circlespe{
+        border: 1px solid #87CEEB;
+        border-radius: 50%;
+        background-color: #87CEEB;
+        /* width: 52px; */
+        padding: 5px;
+        margin-left: -8px;
+        display: block;
+        width: 16px;
+    }
+    .info{
+        display: flex;
+        align-items: center;
+    }
+
+ /*section 2*/
+        .figact1{
+            background-color:white;
+            border-radius: 15px;
+            box-shadow: 6px 6px 10px black;
+            text-align: center;
+    
+        }
+    
+        .fig1{
+            height: 60%;
+            width: 90%;
+            border:2px solid white;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+    
+        .blocs{
+            display: flex;
+        }
+    
+        .ssbloc1{
+            
+            background-color: #F2F2F2;
+            border-radius: 10px;
+            padding-left: 10px;
+        }
+    
+        .sssbloc1{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+    
+        .ssbloc3{
+            
+            background-color: #F2F2F2;
+            border-radius: 10px;
+            padding-left: 10px;
+        }
+    
+        .ssbloc2{
+            background-color: white;
+            width: 30px;
+        }
+    
+        .sssbloc3{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: center;
+    
+        }
+        
+        .titre2{
+            display: flex;
+        }
+
+        .graphe{
+            width: 60px;
+        }
+
+
+        .fa-line-chart{
+            padding-top: 20px;
+            padding-left: 30px;
+        }
+
+        
+    
+
+
+        /*les images de la classe figact1 ont une taille de 100px avec une largeur de 200px et ils sont adaptés à la 
+        taille du conteneur par object fit donc toutes les images ont la meme taille*/
+        .figact1 img {
+            height: 100px;
+            width: 200px;
+            object-fit: cover;
+        }
+        
+
+
+
+
+
+
+
+/*section 3*/
+    
+.ActivitesMarseille{
+    display: flex;
+    flex
+}
+
+.figact3{
+    background-color:white;
+            border-radius: 15px;
+            box-shadow: 6px 6px 10px black;
+            text-align: center;
+
+}
+
+.fig3{
+    height: 60%;
+    width: 90%;
+    border:2px solid white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.figact3 img {
+            height: 100px;
+            width: 200px;
+            object-fit: cover;
+        }
+
+/*mettre en colonne les deux figures utilisées pour positionner les deux figures dans activités*/
+.partiel1{
+    display: flex;
+    flex-direction: column;
+}
+
+.partiel2{
+    display: flex;
+    flex-direction: column;
+}
+/*footer*/
+                footer{
+                    background-color: #F2F2F2;
+                    DISPLAY: FLEX;
+                    align-content: flex-start;
+                }
+            
+                footer ul {
+                    list-style: none;
+                }
+            
+                .ssfooter{
+                    font-weight: bold;
+                    margin-bottom: 30px;
+                    
+                }
+            
+                .element3{
+                    width : 200px;
+                    padding-left: 200px;
+                }
+            
+                .element2{
+                    padding-left: 200px;
+                }
+        
