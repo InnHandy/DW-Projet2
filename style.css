@@ -7,83 +7,112 @@ body{
     padding: 5px;
 }
 
-        /*taille des titres h1 est de 20px*/
-h1{
-    font-size: 20px;
-    }
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 50px;
+}
 
-/*Header*/
-.menu{
+nav img{
+    height: 40px;
+    padding-left: 5px;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+nav li{
+    margin: 0 20px 0 20px;
+}
 
-    color: #DEEBFF;
-    font-weight: bold;
-    }
-    
-.griser{
-    color: gray;
-    }
-     
-    nav{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        line-height: 100px;
-    }
-    
-    nav img{
-        height: 40px;
-        padding-left: 10px;
-    }
-    nav ul {
-        display: flex;
-        list-style: none;
-        justify-content: space-between;
-    }
-    nav li{
-        margin: 0 20px 0 20px;
-    }
     /*survol de la souris*/
     nav li:hover {
         border-top: 1px solid;
         color: #0065FC;
     }
+    /*So lien visité, garde la couleur*/
+    nav li a:visited {
+        color:#0065FC;
+        font-weight: bold;
+    }
+
+    .menu{
+
+        color: #DEEBFF;
+        font-weight: bold;
+        }
+        /*taille des titres h1 est de 20px*/
+h1{
+    font-size: 16px;
+    }
+
+h2{
+    font-size: 15px;
+}
+
+.griser{
+    color: gray;
+    font-size: 13px;
+    }
+/*Header*/
+
+    
+h1 + p{
+    margin-top: -10px;
+}
+     
+    
+
     
 /*section 1*/
+
+
+.chercher{
+    display: flex; 
+    align-content: center;
+    height: 30px;
+ }
+.centrer{
+    
+    background-color: lightgray;
+    width: 30px;
+    text-align: center;
+    border: 2px solid lightgray;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    height: 30px;
+    
+        
+    }
+
+
     .fa-map-marker{
         
         color: black;
-        vertical-align: middle;
-                   
-    }
-    .centrer{
-    
-    background-color: gray;
-    width: 30px;
-    text-align: center;
-    border: 2px solid gray;
-    border-bottom-left-radius: 10px;
-    border-top-left-radius: 10px;
-        
+        padding-top: 9px;
+        font-size: 11px;       
     }
 
+
     
-    .chercher{
-       display: flex; 
-       align-content: center;
-    }
+
 
     .recherche1{
-        height: 22px;
-    font-size: 15px;
+    height: 30px;
+    font-size: 14px;
     border-bottom: 1px solid #F2F2F2;
     border-top: 1px solid #F2F2F2;
     border-left: 0px;
     border-right: 0px;
+    padding-left: 10px;
+    font-weight: bold;
     }
 
     .recherche2{
-        height: 26px;
-        font-size: 15px;
+        height: 34px;
+        font-size: 14px;
         background-color: #0065FC;
         color: white;
         border-bottom-right-radius: 10px;
@@ -91,21 +120,59 @@ h1{
         border-color: #0065FC;
         border-bottom-color: #0065FC;
         border-width: 0px;
+        font-weight: bold;
     }
+
+    /*filtres*/
+
+    .filtre {
+        margin-top: 30px;
+        margin-left: 30px;
+        padding: 0px;
+        height: 22px;
+        width: 172px;
+        position: relative;
+        border: 1px solid lightgray;
+        border-radius: 0 50px 50px 0;
+    }
+    
+    .filtre div {
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        border-radius: 100%;
+        background-color: #87CEEB;
+        text-align: center;
+        
+    }
+    
+    .top { top: -1px;}
+    .left { left: -14px; }
+
+.line a div p{
+    margin-top: 5px;
+}
+
 
     .line{
         display: flex;
         align-items: center;
+        margin-top: 5px;
     }
 
-    .dep{
-        padding-left: 13px;
+    h3{
+        font-size: 14px;
+        margin-top: 26px;
+        margin-bottom: 0px;
     }
 
-    .lienspe{
-        display: block;
-    width: 100px;
-    height: 20px
+
+    .filtre a{
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        font-size: 14px;
+        padding-left: 31px;
     }
     
     .line div {
@@ -114,69 +181,45 @@ h1{
 
     .fa-money{
         color:#0065FC;
-        vertical-align: middle;
-        text-align: center;
-        font-size: 15px;
+        font-size: 13px;
     }
 
     .fa-heart{
         color:#0065FC;
-        vertical-align: middle;
-        text-align: center;
-        font-size: 15px;
+        font-size: 13px;
     }
 
     .fa-child{
         color:#0065FC;
-        vertical-align: middle;
-        text-align: center;
-        font-size: 15px;
+        font-size: 13px;
     }
 
     .fa-paw{
         color:#0065FC;
-        vertical-align: middle;
-        text-align: center;
-        font-size: 15px;
+        font-size: 13px;
     }
 
 
-    .filtre a{
-        text-decoration: none;
-        color: black;
-        font-weight: bold;
-        border: 1px solid gray;
-        border-bottom-left-radius: 15px;
-        border-top-left-radius: 15px;
-        border-bottom-right-radius: 10px;
-        border-top-right-radius: 10px;
-        padding: 5px;
-    }
 
 
-    .circle{
-        border: 1px solid #87CEEB;
-    border-radius: 50%;
-    background-color: #87CEEB;
-    /* width: 52px; */
-    padding: 5px;
-    margin-left: -8px;
-    }
 
-    .circlespe{
-        border: 1px solid #87CEEB;
-        border-radius: 50%;
-        background-color: #87CEEB;
-        /* width: 52px; */
-        padding: 5px;
-        margin-left: -8px;
-        display: block;
-        width: 16px;
-    }
+
+
+
+
     .info{
         display: flex;
         align-items: center;
     }
+.fa-info-circle{
+    color:#87CEEB;
+}
+.espace{
+    text-indent: 7px;
+}
+
+
+
 
  /*section 2*/
         .figact1{
@@ -184,15 +227,18 @@ h1{
             border-radius: 15px;
             box-shadow: 6px 6px 10px black;
             text-align: center;
-    
+            width: 300px;
+            height: 300px;
         }
     
         .fig1{
-            height: 60%;
-            width: 90%;
+            height: 50%;
+            width: 98%;
             border:2px solid white;
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
+            object-fit: cover; /*les images de la classe figact1 ont une taille de 100px avec une largeur de 200px et ils sont adaptés à la 
+            taille du conteneur par object fit donc toutes les images ont la meme taille*/
         }
     
         .blocs{
@@ -246,54 +292,72 @@ h1{
             padding-left: 30px;
         }
 
-        
-    
-
-
-        /*les images de la classe figact1 ont une taille de 100px avec une largeur de 200px et ils sont adaptés à la 
-        taille du conteneur par object fit donc toutes les images ont la meme taille*/
-        .figact1 img {
-            height: 100px;
-            width: 200px;
-            object-fit: cover;
+        .fa-star{
+            color:#0065FC;
         }
+
+        .fa-star-o{
+            color:#0065FC;
+        }
+
+
+
+
         
-
-
-
-
-
-
-
 /*section 3*/
     
 .ActivitesMarseille{
     display: flex;
-    flex
+    border: 1px solid black;
 }
 
-.figact3{
-    background-color:white;
-            border-radius: 15px;
-            box-shadow: 6px 6px 10px black;
-            text-align: center;
-
+.act{
+    width: 322px;
+    border: 1px solid black;
+    
+}
+.figact31{
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 6px 6px 10px black;
+    text-align: center;
+    height: 633px;
+    margin-left: 0px;
+    margin-top: 15px;
+    margin-right: 0px;
+    margin-bottom: 0px;
 }
 
-.fig3{
-    height: 60%;
-    width: 90%;
+.fig31{
+    height: 77%;
+    width: 96%;
     border:2px solid white;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    object-fit: cover; /*les images de la classe figact1 ont une taille de 100px avec une largeur de 200px et ils sont adaptés à la 
+    taille du conteneur par object fit donc toutes les images ont la meme taille*/
 }
+.figact3{
+        background-color:white;
+        border-radius: 15px;
+        box-shadow: 6px 6px 10px black;
+        text-align: center;
+        height: 300px;
+    }
+    
+    .fig3{
+        height: 50%;
+        width: 96%;
+        border:2px solid white;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        object-fit: cover; /*les images de la classe figact1 ont une taille de 100px avec une largeur de 200px et ils sont adaptés à la 
+        taille du conteneur par object fit donc toutes les images ont la meme taille*/
+    }
 
-.figact3 img {
-            height: 100px;
-            width: 200px;
-            object-fit: cover;
-        }
-
+    .largeur{
+        width: 270px;
+    }
 /*mettre en colonne les deux figures utilisées pour positionner les deux figures dans activités*/
 .partiel1{
     display: flex;
