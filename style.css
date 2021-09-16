@@ -3,10 +3,11 @@
 
 body{
     font-family: "Raleway", sans-serif;
-    margin :5px;
-    padding: 5px;
+    margin :9px;
+    padding: 9px;
 }
 
+/*Header*/
 nav{
     display: flex;
     justify-content: space-between;
@@ -43,6 +44,19 @@ nav li{
         color: #DEEBFF;
         font-weight: bold;
         }
+
+        .menu1{
+
+            color: #DEEBFF;
+            font-weight: bold;
+            }
+
+            .menu2{
+
+                color: #DEEBFF;
+                font-weight: bold;
+                visibility: hidden;
+                }
         /*taille des titres h1 est de 20px*/
 h1{
     font-size: 16px;
@@ -125,18 +139,78 @@ h1 + p{
 
     /*filtres*/
 
-    .filtre {
+    .filtre4 {
         margin-top: 30px;
         margin-left: 30px;
         padding: 0px;
         height: 22px;
-        width: 172px;
+        width: 144px;
+        position: relative;
+        border: 1px solid lightgray;
+        border-radius: 0 50px 50px 0;
+    }
+    .filtre1 {
+        margin-top: 30px;
+        margin-left: 30px;
+        padding: 0px;
+        height: 22px;
+        width: 105px;
+        position: relative;
+        border: 1px solid lightgray;
+        border-radius: 0 50px 50px 0;
+    }
+    .filtre2 {
+        margin-top: 30px;
+        margin-left: 30px;
+        padding: 0px;
+        height: 22px;
+        width: 78px;
+        position: relative;
+        border: 1px solid lightgray;
+        border-radius: 0 50px 50px 0;
+    }
+    .filtre3 {
+        margin-top: 30px;
+        margin-left: 30px;
+        padding: 0px;
+        height: 22px;
+        width: 102px;
         position: relative;
         border: 1px solid lightgray;
         border-radius: 0 50px 50px 0;
     }
     
-    .filtre div {
+    .filtre1 div {
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        border-radius: 100%;
+        background-color: #87CEEB;
+        text-align: center;
+        
+    }
+
+    .filtre2 div {
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        border-radius: 100%;
+        background-color: #87CEEB;
+        text-align: center;
+        
+    }
+
+    .filtre3 div {
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        border-radius: 100%;
+        background-color: #87CEEB;
+        text-align: center;
+        
+    }
+
+    .filtre4 div {
         position: absolute;
         width: 25px;
         height: 25px;
@@ -167,14 +241,34 @@ h1 + p{
     }
 
 
-    .filtre a{
+    .filtre1 a{
         text-decoration: none;
         color: black;
         font-weight: bold;
         font-size: 14px;
-        padding-left: 31px;
+        padding-left: 13px;
     }
-    
+    .filtre2 a{
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        font-size: 14px;
+        padding-left: 15px;
+    }
+    .filtre3 a{
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        font-size: 14px;
+        padding-left: 14px;
+    }
+    .filtre4 a{
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        font-size: 14px;
+        padding-left: 14px;
+    }
     .line div {
         margin-right: 20px;
     }
@@ -214,17 +308,21 @@ h1 + p{
 .fa-info-circle{
     color:#87CEEB;
 }
-.espace{
+.espaceautre{
     text-indent: 7px;
 }
 
-
+.nonsurligne{
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+}
 
 
  /*section 2*/
  .fig1{
-    height: 77%;
-    width: 230px;
+    height: 50%;
+    width: 200px;
     border:2px solid white;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -232,35 +330,40 @@ h1 + p{
     taille du conteneur par object fit donc toutes les images ont la meme taille*/
  }
  
+ .activ{
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 6px 6px 10px black;
+    text-align: center;
+    height: 200px;
+    margin: 2px auto;
+}
  
- 
- .fig2{
-    height: 77%;
-    width: 230px;
-    border:2px solid white;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    object-fit: cover; /*les images de la classe figact1 ont une taille de 100px avec une largeur de 200px et ils sont adaptés à la 
-    taille du conteneur par object fit donc toutes les images ont la meme taille*/
-        }
 
-.activ{
-            background-color: white;
-            border-radius: 15px;
-            box-shadow: 6px 6px 10px black;
-            text-align: center;
-            height: 316px;
-            margin: 2px auto;
-        }
+
+
 .activp{
             background-color: white;
             border-radius: 15px;
             box-shadow: 6px 6px 10px black;
             text-align: center;
-            height: 316px;
+            height: 140px;
             margin: 2px auto;
+            display: flex;
         }
+.fig2{
+    height: 95%;
+    width: 160px;
+    border: 2px solid white;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    object-fit: cover; /*les images de la classe figact1 ont une taille de 100px avec une largeur de 200px et ils sont adaptés à la 
+            taille du conteneur par object fit donc toutes les images ont la meme taille*/
+                }
 
+.espace{
+    width: 150px;
+}
     
 .blocs{
             display: flex;
@@ -284,6 +387,7 @@ h1 + p{
             background-color: #F2F2F2;
             border-radius: 10px;
             padding-left: 10px;
+            padding-right: 10px;
         }
     
         .ssbloc2{
@@ -293,7 +397,7 @@ h1 + p{
     
         .sssbloc3{
             display: flex;
-            flex-wrap: wrap;
+            flex-direction:column;
             justify-content: flex-start;
             align-items: center;
     
@@ -310,7 +414,7 @@ h1 + p{
 
         .fa-line-chart{
             padding-top: 16px;
-            padding-left: 120px;
+            padding-left: 144px;
         }
 
         .fa-star{
@@ -396,3 +500,57 @@ h1 + p{
                     padding-left: 200px;
                 }
         
+
+/* Media Queries*/
+
+@media screen and (min-width: 375px) and (max-width: 414px) {
+    
+    .menu1{display: none;}
+    .menu2 {visibility: visible;}
+    .menu2 a {text-decoration: none;}
+    nav {
+        flex-wrap: wrap;
+    }
+    nav li:hover {
+        border-top: 0px;
+        border-bottom: 1px solid;
+        color: #0065FC;
+    }
+    /*So lien visité, garde la couleur*/
+    nav div a:visited {
+        color:#0065FC;
+        font-weight: bold;}
+
+    nav ul li a {
+        text-decoration: underline;
+        text-decoration:#F2F2F2;
+    }
+
+    .filtre1, .filtre3, .filtre4 { margin-left: 8px;}
+    .filtre3{ width: 150px;}
+    .line{flex-wrap: wrap;}
+
+    .line div h3 { width : 300px;}
+
+    .info{ margin-top: 5px;}
+
+    .fa-info-circle{ margin-bottom: 15px;
+        margin-right: 2px;}
+
+    .espaceautre {text-indent: 0px;}
+
+    .blocs{flex-direction: column-reverse;}
+
+    .ActivitesMarseille{ flex-direction: column;}
+
+    footer{ flex-direction: column;}
+
+    .element3{
+        width : 200px;
+        padding-left: 200px;
+    }
+
+    .element2{
+        padding-left: 200px;
+    }
+  }
