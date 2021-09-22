@@ -22,6 +22,15 @@ nav img{
     height: 40px;
     padding-left: 5px;
 }
+
+.menu2{
+
+    color: #DEEBFF;
+    font-weight: bold;
+    visibility: hidden;
+    }
+
+
 nav ul {
     display: flex;
     list-style: none;
@@ -54,25 +63,36 @@ nav li{
             font-weight: bold;
             }
 
-            .menu2{
-
-                color: #DEEBFF;
-                font-weight: bold;
-                visibility: hidden;
-                }
+            
         /*taille des titres h1 est de 20px*/
 h1{
     font-size: 16px;
     }
 
 h2{
-    font-size: 15px;
+    font-size: 12px;
+}
+
+#lieux{
+    font-size: 12px;
+    margin-left: 10px;
+    font-weight: bold;
+    vertical-align: bottom;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .griser{
     color: gray;
     font-size: 13px;
     }
+
+    .griser1{
+        color: gray;
+        font-size: 13px;
+        margin-top: 0px;
+        margin-bottom: 5px;
+        }
 /*Header*/
 
     
@@ -323,9 +343,17 @@ h1 + p{
 
 
  /*section 2*/
+ .photo{
+height: 60%;
+ }
+
+ .textphoto{
+     height: 40%;
+     padding-left: 3%;
+ }
  .fig1{
-    height: 50%;
-    width: 200px;
+    height: 100%;
+    width: 97%;
     border:2px solid white;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -337,9 +365,11 @@ h1 + p{
     background-color: white;
     border-radius: 15px;
     box-shadow: 6px 6px 10px black;
-    text-align: center;
     height: 200px;
-    margin: 2px auto;
+    width: 30%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
 }
  
 
@@ -349,14 +379,17 @@ h1 + p{
             background-color: white;
             border-radius: 15px;
             box-shadow: 6px 6px 10px black;
-            text-align: center;
             height: 140px;
-            margin: 2px auto;
+            margin: 22px auto;
             display: flex;
         }
+
+.dimension{
+    width: 70%;
+}
 .fig2{
     height: 95%;
-    width: 160px;
+    width: 100%;
     border: 2px solid white;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -365,7 +398,12 @@ h1 + p{
                 }
 
 .espace{
-    width: 150px;
+    width: 60%;
+    padding-left: 3%;
+}
+
+.espace0{
+    width : 40%;
 }
     
 .blocs{
@@ -377,6 +415,7 @@ h1 + p{
             background-color: #F2F2F2;
             border-radius: 10px;
             padding-left: 10px;
+            width: 70%;
         }
     
         .sssbloc1{
@@ -391,11 +430,12 @@ h1 + p{
             border-radius: 10px;
             padding-left: 10px;
             padding-right: 10px;
+            width: 27%;
         }
     
         .ssbloc2{
             background-color: white;
-            width: 30px;
+            width: 3%;
         }
     
         .sssbloc3{
@@ -411,13 +451,12 @@ h1 + p{
         }
 
         .graphe{
-            width: 120px;
+            width: 9%;
         }
 
 
         .fa-line-chart{
             padding-top: 16px;
-            padding-left: 144px;
         }
 
         .fa-star{
@@ -436,6 +475,7 @@ h1 + p{
     
 .ActivitesMarseille{
     display: flex;
+    height: 300px;
 }
 
 
@@ -443,8 +483,9 @@ h1 + p{
     background-color: white;
     border-radius: 15px;
     box-shadow: 6px 6px 10px black;
-    text-align: center;
-    height: 300px;
+    /*text-align: center;*/
+    height: 100%;
+    width: 20%;
     margin: 2px auto;
 }
 
@@ -452,14 +493,28 @@ h1 + p{
     background-color: white;
     border-radius: 15px;
     box-shadow: 6px 6px 10px black;
-    text-align: center;
-    height: 147px;
+    /*text-align: center;*/
+    height: 45%;
+    width: 100%
     margin: 2px auto;
 }
+
+.unespace{
+    height: 10%;
+}
 .fig31{
-    height: 65%;
-    width: 230px;
-    border:2px solid white;
+    height: 83%;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover; /*les images de la classe figact1 ont une taille de 100px avec une largeur de 200px et ils sont adaptés à la 
+    taille du conteneur par object fit donc toutes les images ont la meme taille*/
+}
+
+.fig30{
+    height: 91%;
+   /* width: 230px;*/
+   width: 100%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     object-fit: cover; /*les images de la classe figact1 ont une taille de 100px avec une largeur de 200px et ils sont adaptés à la 
@@ -469,9 +524,10 @@ h1 + p{
 .partiel{
     display: flex;
     flex-direction: column;
+    width: 20%;
 }
 
-
+.ActivitesMarseillehidden{display:none;}
 
 
 
@@ -504,25 +560,46 @@ h1 + p{
                 }
         
 
+.section1{
+    margin-bottom: 20px;
+}
+
+.section2{
+    margin-bottom: 20px;
+}
+
+.section3{
+    margin-bottom: 20px;
+}
+
 /* Media Queries*/
 
 /*Phones Portrait and Landscape*/
+
 @media only screen 
 and (min-width: 375px) 
 and (max-width: 767px) 
-and (-webkit-min-device-pixel-ratio: 3) { 
+ { 
     .menu1{display: none;}
     .menu2 {visibility: visible;}
     .menu2 a {text-decoration: none;}
     nav {
         flex-wrap: wrap;
     }
+    nav ul { width:100%;justify-content: center;padding-left: 0px;}
+    nav li{border-top: 0px;border-bottom: 1px solid;color: #F2F2F2;}
     nav li:hover {
         border-top: 0px;
         border-bottom: 1px solid;
         color: #0065FC;
     }
+    .menu{border-bottom: 1px solid gray; margin-right: 0px; margin-left: 0px;}
+
+    .line{flex-wrap: wrap;justify-content:space-between;}
+    .chercher{justify-content: center;}
     /*So lien visité, garde la couleur*/
+
+    
     nav div a:visited {
         color:#0065FC;
         font-weight: bold;}
@@ -532,9 +609,22 @@ and (-webkit-min-device-pixel-ratio: 3) {
         text-decoration:#F2F2F2;
     }
 
-    .filtre1, .filtre3, .filtre4 { margin-left: 8px;}
+    .filtre1, .filtre3, .filtre4 { margin-left: 5%;}
     .filtre3{ width: 150px;}
-    .line{flex-wrap: wrap;}
+
+    .ssbloc3{width: 70%;margin:0 auto;}
+
+    .titre2{justify-content: space-between;}
+
+    .ssbloc1{margin: 0 auto;}
+
+    .activ{width: 92%;}
+
+    .ActivitesMarseille{height: auto; flex-direction: column;}
+
+    .activ1{width:32%;}
+
+    .activ2{margin:0 auto}
 
     .line div h3 { width : 300px;}
 
@@ -553,7 +643,6 @@ and (-webkit-min-device-pixel-ratio: 3) {
 
     .element3{
         width : 200px;
-        padding-left: 200px;
     }
 
     .element2{
@@ -563,26 +652,23 @@ and (-webkit-min-device-pixel-ratio: 3) {
 
 
 
-/* Tablets Portrait similar to phones*/
+/* Tablets Portrait and landscape similar to phones et doit on rajouter (-webkit-min-device-pixel-ratio: 2) ? ou pas ?*/
+
+
 @media only screen 
   and (min-width: 768px) 
   and (max-width: 1024px) 
-  and (orientation: portrait) 
-  and (-webkit-min-device-pixel-ratio: 2) {
+  and (-webkit-min-device-pixel-ratio: 2) 
+   {
     .menu1{display: none;}
     .menu2 {visibility: visible;}
     .menu2 a {text-decoration: none;}
-    nav {
-        flex-wrap: wrap;
-    }
-    nav li:hover {
-        border-top: 0px;
-        border-bottom: 1px solid;
-        color: #0065FC;
-    }
+     nav {flex-wrap: wrap;}
+     nav li{border-top: 0px;border-bottom: 1px solid;color: #F2F2F2;}
+     nav li:hover {border-top: 0px;border-bottom: 1px solid;color: #0065FC;}
     /*So lien visité, garde la couleur*/
-    nav div a:visited {
-        color:#0065FC;
+    
+    nav div a:visited {color:#0065FC;
         font-weight: bold;}
 
     nav ul li a {
