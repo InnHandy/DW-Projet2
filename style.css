@@ -578,24 +578,28 @@ height: 60%;
 
 @media only screen 
 and (min-width: 375px) 
-and (max-width: 767px) 
- { 
+and (max-width: 1024px) 
+ { /*menu de navigation nav*/
     .menu1{display: none;}
-    .menu2 {visibility: visible;}
+    .menu2 {visibility: visible;
+    font-size: 28px;}
     .menu2 a {text-decoration: none;}
-    nav {
-        flex-wrap: wrap;
-    }
-    nav ul { width:100%;justify-content: center;padding-left: 0px;}
-    nav li{border-top: 0px;border-bottom: 1px solid;color: #F2F2F2;}
+    nav li a {text-decoration: none;}
+    .menu{padding-left: 1%;padding-right:1%;font-size: 28px;}
+
+    nav {flex-wrap: wrap; justify-content: space-around;}
+    nav ul { width: 100%;
+             justify-content: center;
+             padding-left: 0px;}
+
     nav li:hover {
         border-top: 0px;
         border-bottom: 1px solid;
-        color: #0065FC;
-    }
-    .menu{border-bottom: 1px solid gray; margin-right: 0px; margin-left: 0px;}
+        color: #0065FC;}
+    .menu{border-bottom: 1px solid lightgray; margin-right: 0px; margin-left: 0px;}
 
-    .line{flex-wrap: wrap;justify-content:space-between;}
+/*filtre*/
+    .line{flex-wrap: wrap;justify-content:space-between; padding: 0 13%; margin-bottom: 5px;}
     .chercher{justify-content: center;}
     /*So lien visité, garde la couleur*/
 
@@ -604,13 +608,18 @@ and (max-width: 767px)
         color:#0065FC;
         font-weight: bold;}
 
-    nav ul li a {
-        text-decoration: underline;
-        text-decoration:#F2F2F2;
-    }
+#activites{margin:0 18%;}
 
-    .filtre1, .filtre3, .filtre4 { margin-left: 5%;}
-    .filtre3{ width: 150px;}
+.line:first-child{width:10%;} 
+    .filtre2,.filtre1, .filtre3, .filtre4 { margin-left: 1%;}
+
+.line div { margin-right:5%;}
+    .filtre3{ width: 100px;}
+
+#lieux{font-size: 26px;}
+    .fa-info-circle {
+        margin-bottom: 7px;
+        margin-right: 2px;}
 
     .ssbloc3{width: 70%;margin:0 auto;}
 
@@ -620,87 +629,64 @@ and (max-width: 767px)
 
     .activ{width: 92%;}
 
-    .ActivitesMarseille{height: auto; flex-direction: column;}
+    .ActivitesMarseille{display:none;}
 
-    .activ1{width:32%;}
+    .activ1{width:65%; margin: 25px auto;}
+
+    h1{ font-size : 26px;}
 
     .activ2{margin:0 auto}
 
-    .line div h3 { width : 300px;}
-
-    .info{ margin-top: 5px;}
-
-    .fa-info-circle{ margin-bottom: 15px;
-        margin-right: 2px;}
+    .info{ margin: 0 13%;}
 
     .espaceautre {text-indent: 0px;}
 
     .blocs{flex-direction: column-reverse;}
 
-    .ActivitesMarseille{ flex-direction: column;}
 
     footer{ flex-direction: column;}
 
-    .element3{
-        width : 200px;
-    }
+    .ActivitesMarseillehidden{display:flex; flex-direction: column;}
 
-    .element2{
-        padding-left: 200px;
-    }
+    .ActivitesMarseillehidden div{ height: 270px;}
+
+    .fig30 {
+        height: 84%;
   }
 
+.section1 h1 , .section1 h1+p {
+    margin-left : 18%;
+}
+
+.chercher{height: 60px;}
+
+.centrer{width: 80px; height: 100%;}
+
+.recherche1{height: 100%; font-size: 26px;}
+
+.recherche2{height: 100%; font-size: 26px;}
+
+.fa-map-marker {
+    color: black;
+    padding-top: 15px;
+    font-size: 22px;}
+
+.element1, .element2,.element3{padding-left: 0px; margin: 20px auto; width: 89%;}
+
+
+footer{ margin: 0 17%;}
+
+footer ul, footer ul li {font-size: 26px;}
+
+.griser {
+    color: gray;
+    font-size: 26px;}
+
+nav img{
+    height:72px;
+    padding-right: 40px;
+}
 
 
 /* Tablets Portrait and landscape similar to phones et doit on rajouter (-webkit-min-device-pixel-ratio: 2) ? ou pas ?*/
-
-
-@media only screen 
-  and (min-width: 768px) 
-  and (max-width: 1024px) 
-  and (-webkit-min-device-pixel-ratio: 2) 
-   {
-    .menu1{display: none;}
-    .menu2 {visibility: visible;}
-    .menu2 a {text-decoration: none;}
-     nav {flex-wrap: wrap;}
-     nav li{border-top: 0px;border-bottom: 1px solid;color: #F2F2F2;}
-     nav li:hover {border-top: 0px;border-bottom: 1px solid;color: #0065FC;}
-    /*So lien visité, garde la couleur*/
-    
-    nav div a:visited {color:#0065FC;
-        font-weight: bold;}
-
-    nav ul li a {
-        text-decoration: underline;
-        text-decoration:#F2F2F2;
-    }
-
-    .filtre1, .filtre3, .filtre4 { margin-left: 8px;}
-    .filtre3{ width: 150px;}
-    .line{flex-wrap: wrap;}
-
-    .line div h3 { width : 300px;}
-
-    .info{ margin-top: 5px;}
-
-    .fa-info-circle{ margin-bottom: 15px;
-        margin-right: 2px;}
-
-    .espaceautre {text-indent: 0px;}
-
-    .blocs{flex-direction: column-reverse;}
-
-    .ActivitesMarseille{ flex-direction: column;}
-
-    footer{ flex-direction: column;}
-
-    .element3{
-        width : 200px;
-        padding-left: 200px;
-    }
-
-    .element2{
-        padding-left: 200px;
-    }
 }
