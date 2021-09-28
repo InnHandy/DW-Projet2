@@ -248,7 +248,7 @@ h2{
 .ActivitesMarseillehidden{display:none;}
 
 
-#lieux{
+.lieux{
     font-size: 12px;
     margin-left: 10px;
     font-weight: bold;
@@ -267,7 +267,8 @@ footer{
 }            
 footer ul {
             list-style: none;
-}           
+}   
+footer ul li{ margin-top: 5px;margin-bottom: 5px;}
 .ssfooter{
           font-weight: bold;
           margin-bottom: 30px;    
@@ -342,7 +343,7 @@ footer ul {
     .fa-child{color:#0065FC;font-size: 18px;}
     .fa-paw{color:#0065FC;font-size: 18px;}
     .decaler { margin-left: 3%;font-size: 22px;}
-    #lieux{font-size: 20px;margin-left: 3%;}
+    .lieux{font-size: 20px;margin-left: 3%;}
     .fa-info-circle {margin-bottom: 7px;margin-right: 2px;}
     .ssbloc3{width: 97%;margin:0 auto;}
     .titre2{justify-content: space-between;}
